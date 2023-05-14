@@ -1,232 +1,288 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
+    <html lang="en">
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>PSHS Knowledge Hub - CLC:Log in</title>
-            <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:wght@300&display=swap" rel="stylesheet">            
-            <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Lilita+One&family=Oswald:wght@700&family=Poppins:wght@300;900&display=swap" rel="stylesheet">           
-            <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Lilita+One&family=Montserrat:wght@500;600&family=Oswald:wght@700&family=Poppins:wght@300;900&display=swap" rel="stylesheet">
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Lilita+One&family=Montserrat:wght@500;600&family=Oswald:wght@700&family=Poppins:wght@300;900&family=Quicksand:wght@300&family=Roboto+Condensed&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Lilita+One&family=Montserrat:wght@500;600&family=Oswald:wght@700&family=Poppins:wght@300;900&family=Quicksand:wght@300&family=Roboto+Condensed&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Lilita+One&family=Montserrat:wght@500;600&family=Oswald:wght@700&family=Poppins:wght@300;900&family=Quicksand:wght@300;500;700&family=Roboto+Condensed&display=swap" rel="stylesheet">           
-            
-            <style>
-            body{
-                margin: 0;
-                padding: 0;
-                font-family: 'Poppins', sans-serif;
-                background-size: cover;
-                font-size: 15px;
-            }
-            
-            section{
-                text-align: center; 
-                box-sizing: border-box;
-                background: rgba(205, 198, 198, 0.8);
-                box-shadow: 0 15px 25px rgba(0, 0, 0, 0.8);
-                top: 50%;
-                left: 50%;
-                width: 970px;
-                height: 510px;
-                transform: translate(-50%, -50%);
-                position: absolute;
-                padding: 70px 30px;
-                border-radius: 10px;
-                margin-top: -30px;
-            }
+        <head>
+            <title>ChocoCafe</title>
+    
+            <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alegreya&family=BhuTuka+Expanded+One&family=Cinzel+Decorative&family=Cormorant+Garamond:wght@300&family=Covered+By+Your+Grace&family=Cutive+Mono&family=IBM+Plex+Sans+Devanagari:wght@200&family=Indie+Flower&family=Nothing+You+Could+Do&family=Oswald:wght@300&display=swap" rel="stylesheet">            
+            <style> 
+                body{
+                    margin: 0;
+                    padding: 0;
+                    font-family: sans-serif;
+                }
+    
+                nav{
+                    width: 100%;
+                    float: left;
+                    text-align: center;
+                    width: 100%;
+                    padding: 35px 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    box-sizing: border-box;
+                    border-bottom: 3px solid silver;
+                    border-bottom-left-radius: 100px;
+                }
 
-            form input{
-                width: 90%;
-                margin-bottom: 20px;
-            }
+                header{
+                    float: left;
+                    width: 100%;
+                    text-align: center;
+                    margin-top: 20px;
+                }
+    
+                header img{
+                    display: inline-block;
+                    text-align: center;
+                    margin: 0 auto;
+                    width: 500px;                       
+                }
+    
+                nav ul{
+                    margin: 0 auto;
+                    text-align: center;
+                    width: 100%;
+                }
 
-            form input[type="text"], input[type="password"] {
-                border: none;
-                border-bottom: 1px solid #fff;
-                background: transparent;
-                color: black;
-                outline: none;
-                height: 40px;
-            }
+                nav ul li{
+                    list-style: none;
+                    display: inline-block;
+                    margin: 0 70px;
+                    position: relative;
+                }
+    
+                nav ul li a{
+                    font-size: 15px;
+                    text-decoration: none;
+                    color: #87CEFA;
+                    text-transform: uppercase;
+                }
+        
+                nav ul li::after{
+                    content: '';
+                    height: 3px;
+                    width: 0;
+                    background: #87CEFA;
+                    position: absolute;
+                    left: 0;
+                    bottom: -10px;
+                    transition: 0.23s;
+                }
 
-            form input[type="submit"] {
-                width: 410px;
-                height: 40px;
-                font-size: 20px;
-                border-radius: 100px;
-                background-color: white;
-                outline: none;
-                border: 1px solid white;
-                font-family: 'Quicksand', sans-serif;                
-                color: black;
-                cursor: pointer;
-            }
+                nav ul li:hover::after{
+                    width: 100%;
+                }
 
-            form input[type="submit"]:hover{
-                content: '';
-                background: #C5C6C7;
-                border: 1px solid #C5C6C7;
-                color: black;
-                font-family: 'Quicksand', sans-serif;            
-            }
+                .active{
+                    background: #696969;
+                    color: #87CEFA;
+                    padding: 3px 30px;
+                }
 
-            .light{
-                font-size: 15px;
-                font-style: normal;
-            }
+                section{
+                    width: 100%;
+                    height: 180vh;
+                    background: linear-gradient(rgba(20, 20, 20, 0.9), rgba(20, 20, 20, 1)), url(background2.jpg);
+                    background-size: cover;
+                    background-position: center;
+                }
 
-            form a img{
-                position: relative;
-                width: 30px;
-            }
+                article{
+                    float: left;
+                    margin-top: 50px;
+                    margin-left: 100px;
+                    margin-right: 100px;
+                    text-align: center;
+                }
 
-            form p{
-                color: black;
-            }
+                article img{
+                    width: 600px;
+                    display: inline-block;
+                    margin: 0 auto;
+                    text-align: center;
+                }
 
-            header {
-                background: linear-gradient(rgba(133, 133, 133, 0.8), rgba(0,0,0,0.6)), url(pshs.png);
-                background-repeat: no-repeat;
-                background-size: cover;
-                height: 100vh;
-                display: flex;
-                align-items: center;
-                font-size: 15px;
-            }
+                article h1, p{
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    color: #87CEFA;
+                    font-size: 30px;
+                    font-family: 'Cormorant Garamond', serif;
+                }
 
-            header section table, tr, td {
-                font-size: 15px;
-                border-collapse: collapse;
-                table-layout: fixed;
-                width: 450px;
-                height: 100px;
-                overflow: auto;
-                margin-bottom: 50px;
-                margin-top: -50px;
-                word-wrap: break-word;
-            }
+                .article2{
+                    float: left;
+                    margin-top: 50px;
+                    margin-left: 100px;
+                    width: 800px;
+                    box-sizing: border-box;
+                    border: 1px solid white;
+                }
 
-            td{
-                table-layout: fixed;
-            }
+                .article2 h1{
+                    color: white;
+                    text-align: center;
+                    font-size: 40px;
+                    color: red;
+                    font-family: 'Cinzel Decorative', cursive;
+                    text-underline-offset: 20px;
+                }
 
-            tr{
+                .article2 video{
+                    float: left;
+                    width: 400px;
+                    margin-left: 10px;
+                    margin-bottom: 10px;
+                }
+
+                .video2{
+                    margin-top: 30px;
+                }
+
+                .CoffeeArticle h1{
+                    margin-top: 70px;
+                    font-family: 'Oswald', sans-serif;
+                    color: white;
+                    text-decoration: none;
+                    font-size: 30px;
+                }
+
+                .CoffeeArticle p{
+                    font-family: 'Indie Flower', cursive;
+                    font-size: 20px;
+                    text-align: center;
+                    color: white;
+                }
+
+                .CakeArticle h1{
+                    margin-top: 70px;
+                    font-family: 'Oswald', sans-serif;
+                    color: white;
+                    text-decoration: none;
+                    font-size: 30px;
+                }
+
+                .CakeArticle p{
+                    font-family: 'Indie Flower', cursive;
+                    font-size: 20px;
+                    text-align: center;
+                    color: white;
+                }
                 
-                table-layout: fixed;
-            }
+                footer{
+                    color: black;
+                    font-family: 'Times New Roman', Times, serif;
+                    text-align: center;
+                }
 
-            td img{
-                width: 450px;
-                text-align: start;
-            }
+                aside{
+                    display: block;
+                    width: 400px;
+                    height: 100px;
+                    margin-top: 50px;
+                    margin-left: 100px;
+                    margin-right: 100px;
+                    display: inline-block;
+                    box-sizing: border-box;
+                }
 
-            table tr td h1{
-                margin: 0;
-                color: black;
-                font-family: 'Montserrat', sans-serif;
-                font-size: 20px;
-            }
+                aside figure img{
+                    display: block;
+                    width: 300px;
+                    text-align: center;
+                    display: inline-block;
+                }
 
-            
-            a:visited{
-                color: blue;
-                text-decoration: none;
-            }
+                aside figure figcaption{
+                    color: white;
+                    font-size: 30px;
+                    font-family: 'Oswald', sans-serif;
+                    text-align: center;
+                }
 
-            .table2 a:visited{
-                color: skyblue;
-            }
+                aside h1{
+                    margin-left: 20px;
+                    color: white;
+                    font-family: 'Cutive Mono', monospace;
+                    font-size: 20px;
+                }
 
-            .table2 a:link{
-                color: skyblue;
-            }
-            
-            a:link { text-decoration: none; }
-            a:visited { text-decoration: none; }
-            a:hover { text-decoration: none; }
-            a:active { text-decoration: none; }
+                .green{
+                    color: green;
+                }
 
-            footer{
-                background-color: rgba(0, 0, 0, 0.7);
-                bottom: 0;
-                position: fixed;
-                color: white;
-                width: 1536px;
-                height: 40px;
-                font-size: 13px;
-                transition: 0.5s;
-            }
+                aside ul li{
+                    font-size: 20px;
+                    margin-right: 20px;
+                    color: white;
+                    font-family: 'Alegreya', serif;                 
+                }
 
-            footer:hover{
-                content: '';
-                background-color: rgba(0, 0, 0, 0.7);
-                height: 130px;
-            }
+                aside p{
+                    font-size: 20px;
+                    color: white;
+                }
 
-            footer p{
-                margin-left: 20px;
-            }
-
-            footer img{
-                width: 25px;
-                margin-bottom: -2.3px;
-            }
-
-            .table2 tr td{
-                color: white;
-                width: 1536px;
-                text-align: center;
-                font-size: 15px;
-            }
-
-            .phone img{
-                width: 15px;
-            }
-        </style>
-    </head>
-    <body>
-      <header>
-        <section>
-            <table style="margin-bottom: 100px;">
-                <tr>
-                    <td style="border-right: 3px solid #CACAD0;">
-                        <img src="logo.png" alt="logo">
-                        <form action="home.html">
-                        <input type="text" name='' placeholder="Username or Email"><br/>
-                        <input type="password" name='' placeholder="Password"><br/>
-                        <a href="home.html"><input type="submit" name='' value="Log in"></a>
-                        <a href="#">Forgot password?</a>
-                        <p>Or sign in with</p>
-                        <a href="#" style="text-decoration: none;"><img src="google.png" alt="google logo"></a>
-                        <i class="far fa-eye" id="togglePassword"></i>
-                    </form>
-                </td>
-                    <td style="position: relative; left: 15px;">
-                        <h1>Welcome to PSHS-CLC Knowledge Hub!</h1><br/>
-                        <p>Log in with your username/email and password, or sign in with Google.<br/><br/>Philippine Sceince High School Central Luzon Campus (PSHS-CLC), the 11th campus of the Philippine Sceince High School System, grants scholarship to students skilled in Science and Mathematics. <br/><br/>Admission to this campus is by passing the National Competitive Examination (NCE) organized by the PSHS administration anually, and only Filipino students are qualified to take part in this examination.</p>
-                    </td>
-                </tr>
-            </table>
-        </section>
-    </header>
-    <footer>
-        <table class="table2">
-            <tr style="height: 40px;">
-                <td colspan="3" style="height: 10px;">Copyright &copy; 2023. All rights reserved.</td>
-            </tr>
-            <tr>
-                <td style="width: 30%;">Visit us at:<br/><a href="https://web.facebook.com/pshsclc" target="_blank"><img src="facebook.png" alt="facebook logo"></a>&nbsp&nbsp&nbsp<a href="https://twitter.com/PSHS_CLC" target="_blank"><img src="twitter.png" alt="twitter logo"></a>&nbsp&nbsp&nbsp<a href="https://t.co/pkI2fnlVcQ" target="_blank"><img src="chrome.png" alt="chrome logo"></a></td>
-                <td class="phone" style="width: 40%; font-size: 15px; position: relative; bottom: 10px;">Contact us:<br/><img src="telephone.png" alt="telephone">&nbsp&nbsp&nbsp(045) 499-0136 or (045) 499-5597<br/><img src="smartphone.png" alt="smartphone">&nbsp&nbsp&nbsp(+63) 925-477-7417 (Smart/TNT/SUN) or (+63) 945-407-0251 (Globe/TM)</td>
-                <td style="width: 30%;"><a href="https://pshs.edu.ph/downloads/admission_forms/2022%20RACE%20Application%20Form.pdf" target="_blank">Application</a> for PSHS 2023 Requirement for Admission, Criteria, and Evalutaion (RACE) for SY 2024-2025.</td>
-            </tr>
-        </table>
-    </footer>
-    </body>
-</html>
+                .dyk{
+                    color: red;
+                    font-family: 'Covered By Your Grace', cursive;
+                    font-size: 50px;
+                }
+            </style>
+        </head>
+            <header>
+                <img src="logo2.png" alt="logo">
+            </header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><span class="active">Home</span></a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </nav>
+            <section>
+                <article>
+                    <img src="logo2.png" alt="logo2">
+                    <p>Welcome to Black Midnight. A peaceful and quiet place to chill with your favorite drinks and desserts. With lots of different sizes, portions, and flavors, Black Midnight also offers an affordable price for you.</p>
+                </article>
+                <div class="article2">
+                    <h1>Our Specialty!</h1>
+                    <video controls>
+                        <source src="coffee2.mp4">
+                    </video>
+                    <div class="CoffeeArticle">
+                        <h1>Black Coffee</h1>
+                        <p>We were bored doing nothing, so we brewed roasted coffee beans.</p>
+                    </div>
+                    <video class="video2" controls>
+                        <source src="cake2.mp4">
+                    </video>
+                    <div class="CakeArticle">
+                        <h1>Chocolate cake</h1>
+                        <p>One night, I dreamt about a strawberry cake. As soon as I woke up, I went to the kitchen and prepared the ingredients. It took me 7 hours to finally make a perfect chocolate cake.</p>
+                    </div>
+                </div>
+                <aside>
+                    <figure>
+                        <img src="blackcoffee.jpg">
+                        <figcaption>Black Coffee</figcaption>
+                    </figure>
+                    <h1><span class="dyk">DYK!?</span><br/> Black Coffee:</h1>
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>Improves your<span class="green"> Mood</span></dt>
+                                <dd>Depression affects more than 18 million people in the world. Studies show that coffee reduces the risk of depression especially if you drink four or more cups a day.</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <p>Resource: <a href="https://www.webmd.com/diet/health-benefits-black-coffee#:~:text=Black%20coffee%20is%20rich%20in,of%20vitamin%20B2%20and%20magnesium.">WebMD</a></p>
+                </aside>
+            </section>
+            <footer>
+                Copyright (C) 2022. All rights reserved. 
+            </footer>
+        </body>
+    </html>
